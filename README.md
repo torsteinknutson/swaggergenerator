@@ -11,5 +11,5 @@ See 4 outputs being generated instantly: 2 .json files to help you debugging (th
 Modify the pythoncode (espescially the regex part) to better suit your needs.<br> 
 
 # Contribute
-This repo is something we use to help automatically generate swagger for our OpenAPI. Feel free to use and improve on it<br>
-Let's free ourselves from the tyranny of manual documentation!<br> 
+This repo is something we use to help automatically generate swagger for our OpenAPI. Feel free to use and improve on it.
+Let's free ourselves from the tyranny of manual documentation!
