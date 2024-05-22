@@ -1,5 +1,5 @@
 # Swaggergenerator
-Automatically generate Swagger documentation from javascript routers and controllers.<br>
+Automatically generate Swagger documentation from javascript routers and controllers using python.<br>
 A Medium-article explaining the code and what it can be used for can be found here: www.medium.com/fremtind/swaggergenerator<br>
 
 # Use
