@@ -1,6 +1,6 @@
 # Swaggergenerator
-Automatically generate Swagger documentation from javascript routers and controllers\ 
-A Medium-article explaining the code and what it can be used for can be found here: www.medium.com/fremtind/swaggergenerator\ 
+Automatically generate Swagger documentation from javascript routers and controllers<br>
+A Medium-article explaining the code and what it can be used for can be found here: www.medium.com/fremtind/swaggergenerator<br>
 
 # Use
 Put both pythonscripts inside the same folder as your javascript router and controller that you want to generate swagger .js files for 
