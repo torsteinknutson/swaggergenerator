@@ -3,13 +3,35 @@ import re
 import os
 import json
 from swaggerSchemaGen import generateswagger # you need the swaggerSchemaGen.py file in the same directory as this file
+import argparse
+
+# Create the parser
+parser = argparse.ArgumentParser(description='Python script that accepts command line arguments.')
+
+# Add the arguments
+parser.add_argument('--service_name', type=str, required=True, help='The service name')
+parser.add_argument('--controller_path', type=str, required=True, help='The controller path')
+parser.add_argument('--router_path', type=str, required=True, help='The router path')
+parser.add_argument('--service_description', type=str, required=False, help='The service description')
+
+# Parse the arguments
+args = parser.parse_args()
+
+service_name = args.service_name
+controller_path = args.controller_path
+router_path = args.router_path
+service_description = args.service_description if args.service_description else f"{service_name} service description here"
+
+# run it like this in the terminal:
+#python your_script.py --service_name "service_name_here" --controller_path "users_controller_example.js" --router_path "users_router_example.js" --service_description "your service description"
+
 
 # Set these parameters to match the files you want to use to generate Swagger comments for
-service_name = "service_name_here"
-controller_path = 'users_controller_example.js'
-router_path = 'users_router_example.js'
-service_description = f"{service_name} service description here"
-response_codes = {200: "OK", 400: "Bad request", 401: "Unauthorized", 404: "Not found",}
+#service_name = "service_name_here"
+#controller_path = 'users_controller_example.js'
+#router_path = 'users_router_example.js'
+#service_description = f"{service_name} service description here"
+#response_codes = {200: "OK", 400: "Bad request", 401: "Unauthorized", 404: "Not found",}
 
 @dataclass
 class Route:
